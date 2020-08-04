@@ -51,3 +51,26 @@
 .next:active{
     background-size: 20px;
 }
+
+#indicators{
+    position:absolute;
+    bottom:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.indicator{
+    width: 40px;
+    height:3px;
+    margin: 2px;
+    background-color: rgba(189, 189, 189, 0.513);
+    transition: all 1s ease;
+}
+
+
+.indicator-active{
+    background-color: white;
+}

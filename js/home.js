@@ -1,8 +1,12 @@
 var slides = new Array();
+var indicators = new Array();
 var index = 1;
+
+
 function creatingSlides() {
     console.log('creating slides');
     let slideImages = ['slide2.jpg','slide3.jpg','slide2.jpg'];
+    indicators = document.getElementsByClassName('indicator');
 
 
     for(let x=0;x<slideImages.length;x++){
@@ -13,10 +17,11 @@ function creatingSlides() {
         document.getElementById("slider").appendChild(slide);
     }
     document.getElementById("slider").style.left = "-100vw"
+    indicators[1].classList.add('indicator-active');
 }
 
 function showSlide(e){
-
+    indicators[index].classList.remove('indicator-active');
     if(e==1){
         if(index==slides.length-1){
             document.getElementById("slider").style.left = "0vw"
@@ -34,6 +39,7 @@ function showSlide(e){
             index--;
         }
     }
+    indicators[index].classList.add('indicator-active');
 }
 
 creatingSlides();
