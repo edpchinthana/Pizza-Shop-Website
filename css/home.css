@@ -1,3 +1,7 @@
+@font-face{
+    font-family: customFont3;
+    src: url(../res/fonts/Lobster/Lobster-Regular.ttf);
+}
 #slideShow {
     position: relative;
     overflow-x: hidden;
@@ -14,6 +18,7 @@
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+    filter: brightness(50%);
 }
 
 .control {
@@ -73,4 +78,15 @@
 
 .indicator-active{
     background-color: white;
+}
+
+.welcome{
+    position: absolute;
+    color:white;
+    font-family: customFont3;
+    top:40%;
+    left: 35%;
+    font-size:25px;
+    line-height: 18px;
+    text-align: center;
 }
