@@ -11,16 +11,21 @@
     src: url(../res/fonts/Rowdies/Rowdies-Bold.ttf);
 }
 
+/*body*/
 body{
     margin: 0px;
     padding: 0px;
 }
+
+
+/*Navigation Bar*/
 #navigationBar{
     position: fixed;
     background-color: rgba(0, 0, 0, 0.685);
     width: 100%;
     height: var(--navbar-height);
     top: 0px;
+    z-index: 10;
 
     color: rgb(219, 219, 219);
     font-size: 16px;
@@ -58,6 +63,8 @@ body{
     padding-right: 20vw;
 }
 
+
+/*Content*/
 #content{
    /* margin-top: var(--navbar-height);*/
 }
