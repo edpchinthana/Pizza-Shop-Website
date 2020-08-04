@@ -1,0 +1,54 @@
+:root {
+    --navbar-height: 50px
+}
+@font-face{
+    font-family: customFont1;
+    src: url(../res/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family: customFont2;
+    src: url(../res/fonts/Rowdies/Rowdies-Bold.ttf);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#navigationBar{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.685);
+    width: 100%;
+    height: var(--navbar-height);
+    top: 0px;
+
+    color: rgb(219, 219, 219);
+    font-size: 16px;
+    font-family: customFont1;
+}
+
+#navigationBar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 0px;
+    margin: 8px;
+    align-items: center;
+}
+
+#navigationBar ul li:first-child{
+    padding-right: 20vw;
+    padding-left: 20vw;
+    font-size: 24px;
+    font-family: customFont2;
+}
+
+#navigationBar ul li:last-child{
+    padding-right: 20vw;
+}
+
+#content{
+   /* margin-top: var(--navbar-height);*/
+}
