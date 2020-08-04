@@ -37,10 +37,19 @@ body{
     margin: 8px;
     align-items: center;
 }
+#navigationBar ul li{
+    transition: all 0.3s ease;
+}
+
+#navigationBar ul li:hover{
+    color: white;
+    font-weight: bold;
+}
 
 #navigationBar ul li:first-child{
     padding-right: 20vw;
     padding-left: 20vw;
+    text-decoration: underline;
     font-size: 24px;
     font-family: customFont2;
 }
