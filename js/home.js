@@ -5,7 +5,7 @@ var index = 1;
 
 function creatingSlides() {
     console.log('creating slides');
-    let slideImages = ['slide2.jpg','slide3.jpg','slide2.jpg'];
+    let slideImages = ['slide1.jpg','slide3.jpg','slide2.jpg'];
     indicators = document.getElementsByClassName('indicator');
 
 

@@ -84,8 +84,8 @@
     position: absolute;
     color:rgb(231, 231, 231);
     font-family: customFont3;
-    top:40%;
-    left: 35%;
+    width: 100%;
+    top: 40%;
     font-size:25px;
     line-height: 18px;
     text-align: center;
