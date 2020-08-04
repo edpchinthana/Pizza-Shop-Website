@@ -11,7 +11,7 @@
     <div id="navigationBar">
         <ul>
             <li>Bruno's Pizzeria</li>
-            <li>Order Now</li>
+            <li><a onclick="showSlide(1);">Order Now</a></li>
             <li>Register</li>
             <li>Features</li>
         </ul>
@@ -19,10 +19,9 @@
     <div id="content">
         <div id="slideShow">
             <div id="slider">
-                <img id="slide1" src="res/images/slide2.jpg">
-                <img id="slide2" src="res/images/slide3.jpg">
-                <img id="slide3" src="res/images/slide2.jpg">
             </div>
+            <a id="prev" onclick="showSlide(0);" class="control prev"></a>
+            <a id="next" onclick="showSlide(1);" class="control next"></a>
         </div>
     </div>
 </body>

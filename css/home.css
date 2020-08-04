@@ -1,7 +1,12 @@
+#slideShow {
+    position: relative;
+    overflow-x: hidden;
+    height: 100vh;
+}
 #slider{
     display: flex;
+    position: absolute;
     flex-direction: row;
-    overflow-x: hidden;
     transition: all 1s ease;
 }
 
