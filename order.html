@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "css/index.css" />
+    <link rel = "stylesheet" type = "text/css" href = "css/order.css" />
     <title>Order Now</title>
 </head>
 <body>
-    
+    <!--Navigation bar-->
+    <div id="navigationBar" class="navbar-active">
+        <ul>
+            <li><a href="index.html">Bruno's Pizzeria</a></li>
+            <li><a href="order.html">Order Now</a></li>
+            <li>Register</li>
+            <li>Features</li>
+        </ul>
+    </div>
+    <!--Content-->
+    <div  class="content">
+        <div id="order" class="">
+            <img src="res/images/home_bg3.jpg">
+            <img src="res/images/home_bg2.jpg">
+            <div class="form-wrapper">
+                <h2>Order Now !</h2>
+                <div class="form">
+                    <div class="column">
+                        <section>
+                            <h3>Pickup or Delivery</h3>
+                        <span> Pickup &nbsp;<input name="type" type="radio" value="yes"  checked="checked"></span><br>
+                        <span> Delivery<input name="type" type="radio" value="no" ></span>
+                        </section>
+                        <section id="deliveryInfo" class="hide-form">
+                            <section>
+                                <h3>Delivery Address</h3>
+                            <section>
+                                Address<br>
+                                <input id="address1" name="type" type="text">
+                            </section>
+                            <section>
+                                Suburb<br>
+                                <input id="suburb1" name="type" type="text" >
+                            </section>
+                            <section>
+                                Postalcode<br>
+                                <input id="postalcode1"name="type" type="text" >
+                            </section>
+                            </section>
+                        </section>
+                        <section id="paymentInfo" class="hide-form">
+                            <h3>Payment Information</h3>
+                        <section>
+                            Full Name<br>
+                            <input name="type" type="text" placeholder="John Smith">
+                        </section>
+                        <section>
+                            Credit Card<br>
+                            <input name="type" type="text" placeholder="1234 56789 1234 5678">
+                        </section>
+                        <section>
+                            CVV<br>
+                            <input name="type" type="text">
+                        </section>
+                        </section>
+
+                    </div>
+                    <div class="column">
+                        <h3>Customer Details</h3>
+                        <section>
+                            Name<br>
+                            <input name="type" type="text" placeholder="John Smith">
+                        </section>
+                        <section>
+                            Email<br>
+                            <input name="type" type="email" placeholder="example@example.com">
+                        </section>
+                        <section>
+                            Contact Number<br>
+                            <input name="type" type="text"  placeholder="041 2356 120">
+                        </section>
+                        <h3>Billing Address</h3>
+                        <section id="addressRadio">
+                            Same as delivery address?<br>
+                            <span>Yes<input name="address" type="radio" value="yes" ></span><br>
+                            <span>No&nbsp;<input name="address" type="radio" value="no"  checked="checked"></span>
+                        </section>
+                        <section>
+                            Address<br>
+                            <input id="address2" name="type" type="text">
+                        </section>
+                        <section>
+                            Suburb<br>
+                            <input id="suburb2" name="type" type="text" >
+                        </section>
+                        <section>
+                            Postalcode<br>
+                            <input id="postalcode2"name="type" type="text" >
+                        </section>
+                        <section id="paymentRadio">
+                            <h3>Pay Online or on pickup?</h3>
+                        <span> Pickup<input name="pay" value="yes" type="radio" checked="checked"></span><br>
+                        <span> Online <input name="pay" value="no" type="radio"></span>
+                        </section>
+                        <input id="submit" type="button" value="Order">
+                        <section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="js/order.js"></script>
 </html>

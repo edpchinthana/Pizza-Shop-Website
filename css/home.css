@@ -3,6 +3,12 @@
     src: url(../res/fonts/Lobster/Lobster-Regular.ttf);
 }
 
+
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-y: hidden;
+}
 #slideShow {
     position: relative;
     overflow-x: hidden;
