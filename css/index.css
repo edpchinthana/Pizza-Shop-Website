@@ -11,12 +11,31 @@
     src: url(../res/fonts/Rowdies/Rowdies-Bold.ttf);
 }
 
+
+
+
 /*body*/
 body{
     margin: 0px;
     padding: 0px;
     overflow-y: hidden;
 }
+
+
+/* Remove link default styles*/
+a:link {
+    color: rgb(219, 219, 219);
+    text-decoration: none;
+  }
+  a:visited {
+    color: rgb(219, 219, 219);
+  }
+  a:hover {
+    color: white;
+  }
+  a:active {
+    color: white;
+  }
 
 
 /*Navigation Bar*/
