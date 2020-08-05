@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="./res/images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" type = "text/css" href = "css/index.css" />
     <link rel = "stylesheet" type = "text/css" href = "css/order.css" />
@@ -31,6 +32,10 @@
                         <span> Pickup &nbsp;<input name="type" type="radio" value="yes"  checked="checked"></span><br>
                         <span> Delivery<input name="type" type="radio" value="no" ></span>
                         </section>
+                        <section>
+                            <h3>Your Pizza Order</h3><br>
+                            <textarea id="pizzaOrder" rows="4" style="resize: none; width: 80%;"></textarea>
+                        </section>
                         <section id="deliveryInfo" class="hide-form">
                             <section>
                                 <h3>Delivery Address</h3>
@@ -52,15 +57,15 @@
                             <h3>Payment Information</h3>
                         <section>
                             Full Name<br>
-                            <input name="type" type="text" placeholder="John Smith">
+                            <input id="fullname" name="type" type="text" placeholder="John Smith">
                         </section>
                         <section>
                             Credit Card<br>
-                            <input name="type" type="text" placeholder="1234 56789 1234 5678">
+                            <input id="creditcard" name="type" type="text" placeholder="1234 56789 1234 5678">
                         </section>
                         <section>
-                            Expired ate<br>
-                            <select>
+                            Expired Date<br>
+                            <select id="expireMonth">
                                 <option value="">Month</option>
                                 <option value="01">January</option>
                                 <option value="02">February</option>
@@ -75,7 +80,7 @@
                                 <option value="11">November</option>
                                 <option value="12">December</option>
                             </select>
-                            <select>
+                            <select id="expireYear">
                                 <option value="">Year</option>
                                 <option value="2020">2020</option>
                                 <option value="2021">2021</option>
@@ -88,7 +93,7 @@
                         </section>
                         <section>
                             CVV<br>
-                            <input name="type" type="text">
+                            <input id="cvv" name="type" type="text">
                         </section>
                         </section>
 
@@ -97,15 +102,15 @@
                         <h3>Customer Details</h3>
                         <section>
                             Name<br>
-                            <input name="type" type="text" placeholder="John Smith">
+                            <input id="name" name="type" type="text" placeholder="John Smith">
                         </section>
                         <section>
                             Email<br>
-                            <input name="type" type="email" placeholder="example@example.com">
+                            <input id="email" name="type" type="email" placeholder="example@example.com">
                         </section>
                         <section>
                             Contact Number<br>
-                            <input name="type" type="text"  placeholder="041 2356 120">
+                            <input id="number" name="type" type="text"  placeholder="041 2356 120">
                         </section>
                         <h3>Billing Address</h3>
                         <section id="addressRadio">
