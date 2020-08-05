@@ -15,6 +15,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    overflow-y: hidden;
 }
 
 
@@ -30,6 +31,10 @@ body{
     color: rgb(219, 219, 219);
     font-size: 16px;
     font-family: customFont1;
+}
+
+.navbar-active{
+    background-color: black;
 }
 
 #navigationBar ul{
@@ -67,4 +72,17 @@ body{
 /*Content*/
 #content{
    /* margin-top: var(--navbar-height);*/
+}
+
+.panel {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+	cursor: default;
+}
+
+.well {
+	position: relative;
+	overflow-y: hidden;
+	transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
 }
