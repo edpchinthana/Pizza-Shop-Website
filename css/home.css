@@ -2,6 +2,7 @@
     font-family: customFont3;
     src: url(../res/fonts/Lobster/Lobster-Regular.ttf);
 }
+
 #slideShow {
     position: relative;
     overflow-x: hidden;
@@ -113,4 +114,39 @@
     font-family: customFont1;
     font-size: 22px;
 
+}
+
+#menu{
+    display: flex;
+}
+
+#menu img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(20%);
+}
+
+.column{
+    position: absolute;
+    transform: translateY(5vh);
+    top: 0px;
+    width: 40%;
+    padding: 5%;
+    color: rgb(255, 255, 255);
+    font-family: customFont1;
+    line-height: 18px;
+}
+
+.column h3{
+    color: rgb(255, 238, 145);
+    font-family: customFont2;
+}
+
+.col1{
+    left: 0px;
+}
+
+.col2{
+    right: 0px;
 }
