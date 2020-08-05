@@ -27,7 +27,8 @@ history.scrollRestoration = "manual";
 		slength = parseInt(pan.style.transform.replace('translateY(', ''));
 		if (scdir === 'up' && Math.abs(slength) < (plength - plength / pnls)) {
             console.log('3')
-			slength = slength - step;
+            slength = slength - step;
+            document.getElementById("navigationBar").classList.add('navbar-active');
 		} else if (scdir === 'down' && slength < 0) {
             console.log('4')
             slength = slength + step;
@@ -35,17 +36,20 @@ history.scrollRestoration = "manual";
 		} else if (scdir === 'top') {
             console.log('5')
             slength = 0;
-            document.getElementById("navigationBar").classList.remove('navbar-active');
 		}
 		if (hold === false) {
             console.log('6')
 			hold = true;
 			pan.style.transform = 'translateY(' + slength + 'vh)';
 			setTimeout(function() {
+                if(slength==0 && scdir=="down" && hold){
+                    document.getElementById("navigationBar").classList.remove('navbar-active');
+                }
 				hold = false;
 			}, 300);
-		}
-		console.log(scdir + ':' + slength + ':' + plength + ':' + (plength - plength / pnls));
+        }
+
+		//console.log(scdir + ':' + slength + ':' + plength + ':' + (plength - plength / pnls));
 	}
 	/*[swipe detection on touchscreen devices]*/
 	function _swipe(obj) {

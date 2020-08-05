@@ -22,7 +22,7 @@ body{
 /*Navigation Bar*/
 #navigationBar{
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.685);
+    background-color: rgba(0, 0, 0, 0.041);
     width: 100%;
     height: var(--navbar-height);
     top: 0px;
@@ -31,10 +31,11 @@ body{
     color: rgb(219, 219, 219);
     font-size: 16px;
     font-family: customFont1;
+    transition: 1s all ease;
 }
 
 .navbar-active{
-    background-color: black;
+    background-color: black !important;
 }
 
 #navigationBar ul{
