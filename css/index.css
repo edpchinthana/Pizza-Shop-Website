@@ -82,7 +82,7 @@ body{
 }
 
 .well {
-	position: relative;
+    position: relative;
 	overflow-y: hidden;
 	transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
 }

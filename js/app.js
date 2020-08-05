@@ -1,32 +1,44 @@
+
+//remove scroll history on reload
+history.scrollRestoration = "manual";
+
+
 (function() {
-	"use strict";
+	//"use strict";
 	/*[pan and well CSS scrolls]*/
 	var pnls = document.querySelectorAll('.panel').length,
 		scdir, hold = false;
 
 	function _scrollY(obj) {
-		var slength, plength, pan, step = 100,
+        var slength=100;
+		var plength, pan, step = 100,
 			vh = window.innerHeight / 100,
 			vmin = Math.min(window.innerHeight, window.innerWidth) / 100;
 		if ((this !== undefined && this.id === 'well') || (obj !== undefined && obj.id === 'well')) {
 			pan = this || obj;
-			plength = parseInt(pan.offsetHeight / vh);
+            plength = parseInt(pan.offsetHeight / vh);
+            console.log('1')
 		}
 		if (pan === undefined) {
+            console.log('2')
 			return;
 		}
 		plength = plength || parseInt(pan.offsetHeight / vmin);
 		slength = parseInt(pan.style.transform.replace('translateY(', ''));
 		if (scdir === 'up' && Math.abs(slength) < (plength - plength / pnls)) {
+            console.log('3')
 			slength = slength - step;
 		} else if (scdir === 'down' && slength < 0) {
+            console.log('4')
             slength = slength + step;
             document.getElementById("navigationBar").classList.add('navbar-active');
 		} else if (scdir === 'top') {
+            console.log('5')
             slength = 0;
             document.getElementById("navigationBar").classList.remove('navbar-active');
 		}
 		if (hold === false) {
+            console.log('6')
 			hold = true;
 			pan.style.transform = 'translateY(' + slength + 'vh)';
 			setTimeout(function() {
